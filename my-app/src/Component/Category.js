@@ -30,7 +30,7 @@ const Category = () => {
     return (
         <div className='container'>
             <div className='text-left'>
-
+              <h1>cat</h1>
             <ul className=''>
 
                         
