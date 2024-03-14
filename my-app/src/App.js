@@ -20,13 +20,29 @@ import Reduxcountertask from './Component/Reduxcountertask';
 import Snack from './Component/Snack';
 import ApiBirdperson from './Component/ApiBirdperson';
 import ProductDetails from './Component/ProductDetails';
+import Two from './Component/Two';
+import { createContext, useState } from 'react';
+import One from './Component/One';
+
+export const DataContext = createContext()
 
 function App() {
+
+  const [data,setData] = useState('raj')
+
   return (
     
     <>
 <Header />      
 {/* <UsseefectApp/> */}
+
+
+
+<DataContext.Provider value={data}>
+<One />
+<Two/>
+</DataContext.Provider>
+
 
 <Routes> 
         <Route path="/" element={ <Category/> } />
