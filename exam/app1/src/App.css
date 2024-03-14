@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.todoiput {
+
+  font-size: 20px;
+}
+
+.todobtn {
+  font-size: 16px;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.menu {
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.menu ul {
+  padding: 5px;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+
+}
+
+.menu ul li a {
+  text-decoration: none;
+  padding: 5px 20px;
+  font-size: 20px;
+  border: 1px solid blue; 
+  display: block;
+
+}
+
+.menu ul li:hover {
+  /* text-transform: uppercase; */
+  font-weight: 900;
+
+}
+
+.tasklist {
+  list-style: none;
+
+}
+
+.tasklist li {
+  vertical-align: baseline;
+}
+
+button {
+  margin: 0 5px;
+}
+
+.title {
+  font-size: 12px;
+  padding: 0 5px;
+  width: 250px;
+  display: inline-block;
+  text-align: left;
+}
+
+
+.main {
+  width: 100%;
+  text-align: center;
+
+}
+
+.ticbox {
+
+  width: 300px;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.ticbox button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+
+}
+
+.ticinput {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 50px;
+  text-align: center;
+  outline: none;
+
+
+
+
+}
+
+.result {
+  text-align: center;
+  width: 100%;
+}
+
+
+.puzzlebox {
+
+  width: 300px;
+
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.puzzleitem {
+  display: inline-block;
+  outline: none;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  text-align: center;
+  padding: auto;
+  margin: 0px;
+}
+
+.puzzlebox button{
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.converter {
+  text-align: center;
+}
+
+.converter input {
+
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.converter select {
+
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.converter button {
+
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+
+}
