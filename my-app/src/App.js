@@ -24,11 +24,11 @@ import Two from './Component/Two';
 import { createContext, useState } from 'react';
 import One from './Component/One';
 
-export const DataContext = createContext()
+export const MyContext = createContext()
 
 function App() {
 
-  const [data,setData] = useState('raj')
+  const [data,setData] = useState('data from datacontext')
 
   return (
     
@@ -38,10 +38,10 @@ function App() {
 
 
 
-<DataContext.Provider value={data}>
+<MyContext.Provider value={data}>
 <One />
 <Two/>
-</DataContext.Provider>
+</MyContext.Provider>
 
 
 <Routes> 

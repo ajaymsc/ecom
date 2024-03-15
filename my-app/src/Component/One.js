@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { DataContext } from '../App';
+import { MyContext } from '../App';
  
 
 const One = () => {
-    const user = useContext(DataContext);
+    const user = useContext(MyContext);
 
   return (
     <div>one {user}</div>
