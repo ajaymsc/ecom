@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { Skeleton } from '@mui/material';
 
 const Category = () => {
     const [data, SetData] = useState(0);
@@ -9,6 +10,8 @@ const Category = () => {
     useEffect(() => {
         //data
 
+        setTimeout(() => {
+        
         axios.get('https://dummyjson.com/products/categories')
             .then(function (response) {
                 // handle success
@@ -26,16 +29,21 @@ const Category = () => {
 
         SetData("test1 from effect");
         SetData(1)
+        
+    }, 5000);
     }, [data == 0])
+
     return (
         <div className='container'>
+                 <Skeleton /> 
+  
             <div className='text-left'>
               <h1>Category List</h1>
             <ul className=''>
 
                         
 
-                {collection !== null && collection.map((item, index) => {
+                {collection !== null && collection ?  collection.map((item, index) => {
                     // console.log(item);
                     return    <li key={index}  style={ {listStyle:'none'}}>
                                     <Link to={item} > {item} </Link>
@@ -45,7 +53,7 @@ const Category = () => {
 
 
 
-                })}
+                })  :  "" }
  </ul>
 
             </div>

@@ -25,16 +25,19 @@ import { createContext, useState } from 'react';
 import One from './Component/One';
 import Comp1 from './useRef/Comp1';
 import Memoh from './Memoh';
-
+ 
 export const MyContext = createContext()
+
 
 function App() {
 
   const [data,setData] = useState('data from datacontext')
-
+ 
   return (
     
     <>
+ 
+  
 <Header /> 
  <h1>Welcome </h1>
 {/* <Memoh/>      */}
@@ -53,24 +56,24 @@ function App() {
 </MyContext.Provider> */}
 
 
-{/* <Routes>  */}
-        {/* <Route path="/" element={ <Category/> } />
-        <Route path="/snackpattern" element={ <Snack/> } />
-        <Route path="/reduxcounter" element={ <Reduxcountertask/> } />
-        <Route path="/fyup" element={ <Formikyup/> } />
-        <Route path="/fhook" element={ <Formikhook/> } />
-        <Route path="/fbasic" element={ <FormikBasic/> } />
-        <Route path="/formik" element={ <Formikform/> } />
-        <Route path="/todo" element={ <Todo/> } />
+<Routes> 
+        <Route path="/" element={ <Category/> } />
+        {/* <Route path="/snackpattern" element={ <Snack/> } /> */}
+        {/* <Route path="/reduxcounter" element={ <Reduxcountertask/> } /> */}
+        {/* <Route path="/fyup" element={ <Formikyup/> } /> */}
+        {/* <Route path="/fhook" element={ <Formikhook/> } /> */}
+        {/* <Route path="/fbasic" element={ <FormikBasic/> } /> */}
+        {/* <Route path="/formik" element={ <Formikform/> } /> */}
+        {/* <Route path="/todo" element={ <Todo/> } /> */}
         <Route path="/category/:selectedcategory" element={ <Dummyjson/> } />
         <Route path="/productdetails/:productid" element={ <ProductDetails/> } />
         <Route path="/category" element={ <Category/> } />
-        <Route path="/tictac2" element={ <Tictac2/> } />  
+        {/* <Route path="/tictac2" element={ <Tictac2/> } />   */}
         <Route path="home" element={ <Home/> } />
-        <Route path="about" element={ <About/> } />
-        <Route path="tictac" element={ <Tictac2/> } />
-        <Route path="calc" element={ <Calc/> } />
-       </Routes> */}
+        {/* <Route path="about" element={ <About/> } /> */}
+        {/* <Route path="tictac" element={ <Tictac2/> } /> */}
+        {/* <Route path="calc" element={ <Calc/> } /> */}
+       </Routes>
  
     </>
   );
