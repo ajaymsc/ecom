@@ -23,6 +23,8 @@ import ProductDetails from './Component/ProductDetails';
 import Two from './Component/Two';
 import { createContext, useState } from 'react';
 import One from './Component/One';
+import Comp1 from './useRef/Comp1';
+import Memoh from './Memoh';
 
 export const MyContext = createContext()
 
@@ -33,19 +35,26 @@ function App() {
   return (
     
     <>
-<Header />      
+<Header /> 
+ <h1>Welcome </h1>
+{/* <Memoh/>      */}
 {/* <UsseefectApp/> */}
 
 
 
+
+
+
+{/* <Comp1 />
+<hr />
 <MyContext.Provider value={data}>
 <One />
 <Two/>
-</MyContext.Provider>
+</MyContext.Provider> */}
 
 
-<Routes> 
-        <Route path="/" element={ <Category/> } />
+{/* <Routes>  */}
+        {/* <Route path="/" element={ <Category/> } />
         <Route path="/snackpattern" element={ <Snack/> } />
         <Route path="/reduxcounter" element={ <Reduxcountertask/> } />
         <Route path="/fyup" element={ <Formikyup/> } />
@@ -61,7 +70,7 @@ function App() {
         <Route path="about" element={ <About/> } />
         <Route path="tictac" element={ <Tictac2/> } />
         <Route path="calc" element={ <Calc/> } />
-       </Routes>
+       </Routes> */}
  
     </>
   );
